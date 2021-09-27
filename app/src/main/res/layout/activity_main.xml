@@ -9,21 +9,38 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/linear">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:src="@drawable/illustration_hero"
-                    android:backgroundTint="@color/soft_blue"
-                    android:layout_below="@id/logo_bookmark"/>
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo_bookmark">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hero_bg"
+                        android:layout_marginTop="100dp"
+                        android:paddingStart="150dp"
+                        android:scaleType="matrix"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:src="@drawable/illustration_hero"
+                        android:backgroundTint="@color/soft_blue"
+                         />
+
+                </RelativeLayout>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -59,12 +76,14 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginStart="100dp"
                     android:id="@+id/title"
+                    android:layout_marginTop="50dp"
                     />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/clean"
+                    android:layout_marginTop="30dp"
                     android:layout_centerHorizontal="true"
                     android:gravity="center_horizontal"
                     android:layout_marginStart="100dp"
@@ -76,7 +95,8 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_below="@id/title_text"
-                    android:gravity="center_horizontal">
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="40dp">
 
                     <Button
                         android:layout_width="wrap_content"
@@ -91,7 +111,7 @@
                         android:text="Get it on Firefox"
                         android:textAllCaps="false"
                         android:layout_marginStart="20dp"
-                        android:background="@drawable/button_bg"/>
+                        android:background="@drawable/button_bg_white" />
 
                 </LinearLayout>
 
@@ -100,11 +120,13 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
                     android:text="Features"
                     android:layout_centerHorizontal="true"
                     android:id="@+id/features"
@@ -114,42 +136,127 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aim"
+                    android:layout_marginTop="25dp"
                     android:layout_below="@id/features"/>
 
             </RelativeLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/select"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Simple Bookmarking"
+                        android:background="@drawable/tab_bg"
+                        android:id="@+id/simple"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/select"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Speedy Searching"
+                        android:background="@drawable/tab_bg"
+                        android:id="@+id/speedy"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/select"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Easy Sharing"
+                        android:background="@drawable/tab_bg"
+                        android:id="@+id/easy"
+                        />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.google.android.material.tabs.TabLayout
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hero_bg"
+                    android:scaleType="matrix"
+                    android:paddingStart="150dp"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/tab_bg"/>
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="300dp"
+                    android:src="@drawable/illustration_features_tab_1"
+                    android:padding="30dp"/>
 
-                    <com.google.android.material.tabs.TabItem
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="text1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bookmark in one click"
+                    android:layout_below="@id/tab_bg"
+                    android:id="@+id/tab_title"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    />
 
-                    <com.google.android.material.tabs.TabItem
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="text2"/>
-
-                    <com.google.android.material.tabs.TabItem
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="text3"/>
-
-
-                </com.google.android.material.tabs.TabLayout>
-
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/organize"
+                    android:layout_below="@id/tab_title"
+                    android:layout_marginTop="26dp"/>
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -161,13 +268,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/got"
-                    android:layout_below="@id/download"/>
+                    android:layout_below="@id/download"
+                    android:layout_marginTop="26dp"/>
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
@@ -178,7 +287,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -190,15 +300,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/faq"
-                    android:layout_below="@id/frequently"/>
-
-
+                    android:layout_below="@id/frequently"
+                    android:layout_marginTop="32dp"/>
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
@@ -210,13 +320,22 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/faq"
                     android:text="More Info"
-                    android:textAllCaps="false"/>
+                    android:textAllCaps="false"
+                    android:background="@color/soft_blue"
+                    android:layout_marginTop="50dp"
+                    android:layout_centerHorizontal="true"/>
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/soft_blue"
+                android:layout_marginTop="125dp"
+                android:paddingTop="70dp"
+                android:paddingBottom="60dp"
+                android:paddingRight="35dp"
+                android:paddingLeft="35dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -229,19 +348,26 @@
                     android:layout_height="wrap_content"
                     android:text="Stay up-to-date with what we're doing"
                     android:layout_below="@id/join"
-                    android:id="@+id/uptodate"/>
+                    android:id="@+id/uptodate"
+                    android:layout_marginTop="16dp"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:id="@+id/edit"/>
+                    android:id="@+id/edit"
+                    android:textSize="32sp"
+                    android:layout_marginTop="36dp"
+                    android:layout_below="@id/uptodate"/>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Contact Us"
-                    android:textAllCaps="false"/>
+                    android:textAllCaps="false"
+                    android:layout_below="@id/edit"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_bg_red"/>
 
             </RelativeLayout>
 
@@ -249,26 +375,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:background="@color/very_dark_blue"
+                android:paddingTop="45dp"
+                android:paddingBottom="40dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/logo_bookmark"
+                    android:src="@drawable/logo_bookmark_white"
                     />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Features"/>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pricing"/>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="CONTACT"/>
 
@@ -280,12 +409,14 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/icon_facebook"/>
+                        android:src="@drawable/icon_facebook"
+                        android:background="@drawable/icon_facebook"/>
 
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/icon_twitter"/>
+                        android:src="@drawable/icon_twitter"
+                        android:background="@drawable/icon_twitter"/>
 
 
                 </LinearLayout>

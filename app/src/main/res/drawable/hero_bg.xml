@@ -4,8 +4,8 @@
 
     <solid android:color="@color/soft_blue"/>
     <corners android:radius="200dp"/>
-    <size android:height="50dp"
-        android:width="200dp"/>
+    <size android:height="200dp"
+        android:width="400dp"/>
     <padding android:left="10dp"/>
 
 </shape>
