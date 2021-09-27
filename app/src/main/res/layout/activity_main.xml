@@ -71,6 +71,7 @@
                     android:layout_height="wrap_content"
                     android:text="A Simple Bookmark Manager"
                     android:textSize="30sp"
+                    android:textColor="@color/black"
                     android:textFontWeight="700"
                     android:gravity="center_horizontal"
                     android:layout_centerHorizontal="true"
@@ -103,6 +104,8 @@
                         android:layout_height="wrap_content"
                         android:text="Get it on Chrome"
                         android:textAllCaps="false"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
                         android:background="@drawable/button_bg"/>
 
                     <Button
@@ -110,6 +113,8 @@
                         android:layout_height="wrap_content"
                         android:text="Get it on Firefox"
                         android:textAllCaps="false"
+                        android:padding="15dp"
+                        android:textColor="@color/black"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/button_bg_white" />
 
@@ -130,6 +135,10 @@
                     android:text="Features"
                     android:layout_centerHorizontal="true"
                     android:id="@+id/features"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textFontWeight="700"
                     />
 
                 <TextView
@@ -137,6 +146,9 @@
                     android:layout_height="wrap_content"
                     android:text="@string/aim"
                     android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="100dp"
+                    android:gravity="center_horizontal"
                     android:layout_below="@id/features"/>
 
             </RelativeLayout>
@@ -157,7 +169,7 @@
                         android:layout_alignParentBottom="true"
                         android:src="@drawable/select"
                         android:layout_centerHorizontal="true"
-                        android:visibility="gone"/>
+                        android:visibility="visible"/>
 
                     <Button
                         android:layout_width="match_parent"
@@ -242,6 +254,8 @@
                     android:layout_centerHorizontal="true"
                     android:gravity="center_horizontal"
                     android:layout_marginTop="50dp"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
                     />
 
                 <TextView
@@ -249,6 +263,9 @@
                     android:layout_height="wrap_content"
                     android:text="@string/organize"
                     android:layout_below="@id/tab_title"
+                    android:layout_marginStart="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
                     android:layout_marginTop="26dp"/>
 
             </RelativeLayout>
@@ -262,13 +279,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Download the Exstension"
-                    android:id="@+id/download"/>
+                    android:id="@+id/download"
+                    android:textSize="24sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/got"
                     android:layout_below="@id/download"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="100dp"
+                    android:gravity="center_horizontal"
                     android:layout_marginTop="26dp"/>
 
             </RelativeLayout>
@@ -294,14 +317,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Frequently Asked question"
-                    android:id="@+id/frequently"/>
+                    android:id="@+id/frequently"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="100dp"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/faq"
                     android:layout_below="@id/frequently"
-                    android:layout_marginTop="32dp"/>
+                    android:layout_marginTop="32dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="100dp"
+                    android:gravity="center_horizontal"/>
 
             </RelativeLayout>
 
@@ -321,9 +352,11 @@
                     android:layout_below="@+id/faq"
                     android:text="More Info"
                     android:textAllCaps="false"
-                    android:background="@color/soft_blue"
+                    android:background="@drawable/button_bg"
                     android:layout_marginTop="50dp"
-                    android:layout_centerHorizontal="true"/>
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:padding="10dp"/>
 
             </RelativeLayout>
 
@@ -340,7 +373,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="35,000 already joined"
+                    android:text="35,000+ already joined"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
                     android:id="@+id/join"/>
 
                 <TextView
@@ -349,16 +384,21 @@
                     android:text="Stay up-to-date with what we're doing"
                     android:layout_below="@id/join"
                     android:id="@+id/uptodate"
-                    android:layout_marginTop="16dp"/>
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="24sp"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
+                    android:background="@drawable/button_bg_white"
                     android:id="@+id/edit"
                     android:textSize="32sp"
                     android:layout_marginTop="36dp"
-                    android:layout_below="@id/uptodate"/>
+                    android:layout_below="@id/uptodate"
+                    />
 
                 <Button
                     android:layout_width="match_parent"
@@ -389,34 +429,43 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Features"/>
+                    android:text="FEATURES  "
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/white"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pricing"/>
+                    android:text="PRICING"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/white"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CONTACT"/>
+                    android:text="CONTACT"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/white"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="50dp">
 
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/icon_facebook"
-                        android:background="@drawable/icon_facebook"/>
+                        android:background="@drawable/icon_facebook"
+                        />
 
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/icon_twitter"
-                        android:background="@drawable/icon_twitter"/>
+                        android:background="@drawable/icon_twitter"
+                        android:layout_marginStart="40dp"/>
 
 
                 </LinearLayout>
