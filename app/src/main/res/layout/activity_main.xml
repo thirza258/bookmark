@@ -72,6 +72,7 @@
                     android:text="A Simple Bookmark Manager"
                     android:textSize="30sp"
                     android:textColor="@color/black"
+                    android:fontFamily="@font/rubik_regular"
                     android:textFontWeight="700"
                     android:gravity="center_horizontal"
                     android:layout_centerHorizontal="true"
@@ -89,6 +90,7 @@
                     android:gravity="center_horizontal"
                     android:layout_marginStart="100dp"
                     android:layout_below="@+id/title"
+                    android:fontFamily="@font/rubik_light"
                     android:id="@+id/title_text"/>
 
                 <LinearLayout
@@ -103,18 +105,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Get it on Chrome"
+                        android:id="@+id/getChrome"
                         android:textAllCaps="false"
                         android:padding="15dp"
+                        android:elevation="100dp"
                         android:textColor="@color/white"
+                        android:fontFamily="@font/rubik_medium"
                         android:background="@drawable/button_bg"/>
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Get it on Firefox"
+                        android:id="@+id/getFirefox"
                         android:textAllCaps="false"
                         android:padding="15dp"
+                        android:fontFamily="@font/rubik_medium"
                         android:textColor="@color/black"
+                        android:elevation="100dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/button_bg_white" />
 
@@ -164,20 +172,30 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/simple"/>
+
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:src="@drawable/select"
                         android:layout_centerHorizontal="true"
-                        android:visibility="visible"/>
+                        android:visibility="visible"
+                        android:elevation="1500dp"
+                        android:id="@+id/simpleRed"/>
 
                     <Button
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Simple Bookmarking"
-                        android:background="@drawable/tab_bg"
                         android:id="@+id/simple"
+                        android:elevation="200dp"
+                        android:background="@color/white"
                         />
+
+
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -189,16 +207,26 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:src="@drawable/select"
+                        android:elevation="1500dp"
                         android:layout_centerHorizontal="true"
-                        android:visibility="gone"/>
+                        android:visibility="gone"
+                        android:id="@+id/speedyRed"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/speedy"/>
 
                     <Button
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Speedy Searching"
-                        android:background="@drawable/tab_bg"
                         android:id="@+id/speedy"
+                        android:elevation="500dp"
+                        android:background="@color/white"
                         />
+
+
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -211,15 +239,26 @@
                         android:layout_alignParentBottom="true"
                         android:src="@drawable/select"
                         android:layout_centerHorizontal="true"
-                        android:visibility="gone"/>
+                        android:visibility="gone"
+                        android:elevation="1500dp"
+                        android:id="@+id/easyRed"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/easy"/>
 
                     <Button
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Easy Sharing"
-                        android:background="@drawable/tab_bg"
+                        android:elevation="100dp"
                         android:id="@+id/easy"
+                        android:background="@color/white"
                         />
+
+
+
                 </RelativeLayout>
 
 
@@ -243,7 +282,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:src="@drawable/illustration_features_tab_1"
-                    android:padding="30dp"/>
+                    android:padding="30dp"
+                    android:id="@+id/image_tab"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -263,6 +303,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/organize"
                     android:layout_below="@id/tab_title"
+                    android:id="@+id/tabDesc"
                     android:layout_marginStart="100dp"
                     android:layout_centerHorizontal="true"
                     android:gravity="center_horizontal"
@@ -458,6 +499,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/icon_facebook"
                         android:background="@drawable/icon_facebook"
+                        android:id="@+id/facebook"
                         />
 
                     <ImageButton
@@ -465,7 +507,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/icon_twitter"
                         android:background="@drawable/icon_twitter"
-                        android:layout_marginStart="40dp"/>
+                        android:layout_marginStart="40dp"
+                        android:id="@+id/twitter"/>
 
 
                 </LinearLayout>

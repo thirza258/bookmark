@@ -14,4 +14,21 @@
     prioritize</string>
     <string name="faq">Here are some of our FAQs. If you hace
     any other questions you\'d like answered please feel free to email us</string>
+
+    <string name="what">Bookmark is an extension for maximize your compatibility with your browsers</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie, quam eu
+        convallis hendrerit, turpis sapien tempor lacus, hendrerit mollis leo odio a justo. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Aenean a tincidunt sem. Mauris ut odio vitae ante accumsan eleifend.
+        Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci
+        varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque dapibus sapien orci, in
+        faucibus lorem commodo ut. Duis eget lectus vel metus convallis ultricies ut eget diam. Cras justo elit, sodales et
+        suscipit et, mattis ut eros. Cras semper posuere consequat. Donec ut ligula tortor. Nullam vel ipsum in turpis viverra
+        varius. Ut condimentum, elit vel imperdiet viverra, nisl quam tristique elit, ut gravida metus sem eget enim. Morbi sed
+        quam rutrum, maximus nunc sed, pellentesque nibh. Quisque fermentum vehicula fringilla.</string>
+
+    <string name="speedy">Our powerful search feature will help you find saved sites
+    in no time at all. No need to travel through all of your bookmarks</string>
+
+    <string name="easy">Easyly share your bookmarks and collections with others.
+    Create a shareable link that you cand send at the click of a button</string>
 </resources>

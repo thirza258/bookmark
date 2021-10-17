@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mybookmark">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyBookmark">
-        <activity android:name=".FAQ.FaqContent"></activity>
+        <activity android:name=".url.socialmedia.firefox"></activity>
+        <activity android:name=".url.socialmedia.chrome" />
+        <activity android:name=".url.socialmedia.twitter" />
+        <activity android:name=".url.socialmedia.facebook" />
+        <activity android:name=".FAQ.FaqContent" />
         <activity android:name=".extension.BrowserRecycle" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -3,7 +3,66 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".extension.BrowserRecycle">
+    android:layout_height="wrap_content"
+    tools:context=".extension.BrowserRecycle"
+    android:id="@+id/cardParent"
+    android:layout_margin="40dp"
+    app:cardCornerRadius="30dp"
+    android:elevation="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_firefox"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:id="@+id/Browserlogo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Add to"
+            android:layout_below="@id/Browserlogo"
+            android:fontFamily="@font/rubik_semibold"
+            android:textSize="24sp"
+            android:layout_marginTop="32dp"
+            android:id="@+id/browserName"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/browserName"
+            android:layout_marginTop="24dp"
+            android:text="lorem ipsum"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/rubik_regular"
+            android:textSize="16sp"
+            android:id="@+id/version"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_dots"
+            android:layout_below="@id/version"
+            android:layout_marginTop="35dp"
+            android:id="@+id/bg_dots"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/install"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:layout_below="@id/bg_dots"
+            android:layout_margin="30dp"
+            android:background="@drawable/button_bg"/>
+
+    </RelativeLayout>
+
 
 </androidx.cardview.widget.CardView>
